@@ -1,0 +1,41 @@
+body {
+  font-family: "Comic Sans MS";
+}
+
+.card{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition:  .5s;
+}
+
+.card-front, .card-back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  backface-visibility: hidden;
+}
+
+.flip-card{
+  transform: rotateY(180deg);
+}
+
+.card-front{
+  transform: rotateY(180deg);
+  background-color: #4a2040;
+}
+
+.card-back{
+  color: #4a2040;
+  background-color: #9f6ba0;
+  font-size: 30px;
+  /* display: none; */
+}
+
+
